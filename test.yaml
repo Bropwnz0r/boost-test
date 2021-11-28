@@ -1,0 +1,28 @@
+one:
+  title: 'titletestyaml11'
+  description: 'descriptiontestyaml11'
+  author: 'authortestyaml11'
+two:
+  title: 'titletestyaml22'
+  description: 'descriptiontestyaml22'
+  author: 'authortestyam22l'
+
+title: 'titletestyaml33'
+description: 'descriptiontestyaml33'
+author: 'authortestyaml33'
+three:
+  one:
+    two:
+      title: 'titletestyaml44'
+      description: 'descriptiontestyaml44'
+      author: 'authortestyaml44'
+badtype:
+  title: 'titletestyaml66'
+  description: 'descriptiontestyaml66'
+  author:
+    one: 'sdaadsasdasda'
+    two: 'sdadsadsadsad'
+    three:
+      title: 'sdaasdadsadasd77777'
+      description: 'sadadsadasasda77777'
+      author: 'asdadadasdsasdad777777'
