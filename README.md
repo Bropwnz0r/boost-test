@@ -27,17 +27,18 @@ INSTALLATION
 
 ### Install with Docker
 
-Update your vendor packages
+Run install.bat
 
-    docker-compose run --rm php composer update --prefer-dist
+    install.bat
     
-Run the installation triggers (creating cookie validation code)
+Or run 
 
-    docker-compose run --rm php composer install    
+    docker-compose up -d    
     
-Start the container
+And
 
-    docker-compose up -d
+    docker exec -u root -i -w /var/www/boost-test boost_test composer install --prefer-source --no-interaction
+
     
 You can then access the application through the following URL:
 
