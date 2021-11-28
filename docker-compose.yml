@@ -1,6 +1,7 @@
 version: '3.2'
 services:
   php:
+    container_name: boost_test
     build:
           context: ./apache-php
     volumes:

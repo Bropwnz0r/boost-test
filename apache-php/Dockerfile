@@ -5,7 +5,7 @@ COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
 
 #Install spatialite and create symlink for libproj.so.0
 #COPY sqlite3_ext /etc/sqlite3_ext
-RUN apt-get update && apt-get -y install gdal-bin libsqlite3-dev libyaml-dev
+RUN apt-get update && apt-get -y install gdal-bin libsqlite3-dev libyaml-dev zip unzip php-zip
 RUN ln -s /usr/lib/x86_64-linux-gnu/libproj.so.12 /usr/lib/x86_64-linux-gnu/libproj.so.0
 
 #Install gd library for images
